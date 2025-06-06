@@ -6,7 +6,7 @@ const redditCredentials = {
   userAgent: process.env.userAgent,
   clientId: process.env.clientId,
   clientSecret: process.env.clientSecret,
-  username: process.env.username,
+  username: process.env.reddit_username,
   password: process.env.password,
 };
 
@@ -42,7 +42,7 @@ async function reddit() {
         return;
       }
       console.log(">[reddit] Canceling...");
-      process.exit()
+      process.exit();
     }
   }
 
